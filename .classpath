@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/test/resources" output="target/test-classes" excluding="**/*.java"/>
   <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
   <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar" sourcepath="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar">
@@ -88,9 +90,9 @@
       <attribute value="jar:file:/C:/Users/q7e/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.5.1/jackson-datatype-joda-2.5.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar" sourcepath="M2_REPO/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar">
@@ -384,9 +386,17 @@
       <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/eclipse/jetty/toolchain/setuid/jetty-setuid-java/1.0.2/jetty-setuid-java-1.0.2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/junit/junit/4.4/junit-4.4.jar" sourcepath="M2_REPO/junit/junit/4.4/junit-4.4-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/no/storebrand/repository/repository-api/1.1.1/repository-api-1.1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/no/storebrand/repository/hashmap-repository/1.2/hashmap-repository-1.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/4.12/junit-4.12.jar" sourcepath="M2_REPO/junit/junit/4.12/junit-4.12-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/junit/junit/4.4/junit-4.4-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/junit/junit/4.12/junit-4.12-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" sourcepath="M2_REPO/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar" sourcepath="M2_REPO/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5-sources.jar">
@@ -404,4 +414,38 @@
       <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/easytesting/fest-util/1.1.6/fest-util-1.1.6-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/jayway/restassured/rest-assured/2.4.1/rest-assured-2.4.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/groovy/groovy/2.4.3/groovy-2.4.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/groovy/groovy-xml/2.4.3/groovy-xml-2.4.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.3.6/httpclient-4.3.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" sourcepath="M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpmime/4.3.6/httpmime-4.3.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jayway/restassured/json-path/2.4.1/json-path-2.4.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/groovy/groovy-json/2.4.3/groovy-json-2.4.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jayway/restassured/rest-assured-common/2.4.1/rest-assured-common-2.4.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jayway/restassured/xml-path/2.4.1/xml-path-2.4.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/io/dropwizard/dropwizard-testing/0.8.1/dropwizard-testing-0.8.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-core/1.10.17/mockito-core-1.10.17.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/objenesis/objenesis/2.1/objenesis-2.1.jar" sourcepath="M2_REPO/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/assertj/assertj-core/2.0.0/assertj-core-2.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/github/marschall/memoryfilesystem/0.6.4/memoryfilesystem-0.6.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/jersey/test-framework/providers/jersey-test-framework-provider-inmemory/2.17/jersey-test-framework-provider-inmemory-2.17.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/jersey/test-framework/jersey-test-framework-core/2.17/jersey-test-framework-core-2.17.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm-debug-all/5.0.2/asm-debug-all-5.0.2.jar"/>
 </classpath>

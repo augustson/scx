@@ -1,0 +1,23 @@
+server:
+  type: simple
+  connector:
+    type: http
+    port: 9991
+  applicationContextPath: /api
+  adminContextPath: /admin
+
+logging:
+
+ # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  appenders:
+  - type: console
+    threshold: ALL
+
+  loggers:
+    "org.augustson": DEBUG
+
+template: Hello, %s!
+
+defaultName: Stranger 
