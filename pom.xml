@@ -20,8 +20,9 @@
 		<junit.version>4.12</junit.version>
 		<mockito.version>1.9.5</mockito.version>
 		<restassured.version>2.4.1</restassured.version>
-		<repository-api.version>1.1.1</repository-api.version>
-		<hashmap-repository.version>1.2</hashmap-repository.version>
+		<javax.persistence.version>2.0.0</javax.persistence.version>
+		<c3p0.version>0.9.5.1</c3p0.version>
+		<h2.version>1.4.187</h2.version>
 		<!-- Maven plugin versions -->
 		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
 		<maven-jar-plugin.version>2.4</maven-jar-plugin.version>
@@ -37,16 +38,20 @@
 			<version>${dropwizard.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>no.storebrand.repository</groupId>
-			<artifactId>repository-api</artifactId>
-			<version>${repository-api.version}</version>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>javax.persistence</artifactId>
+			<version>${javax.persistence.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>no.storebrand.repository</groupId>
-			<artifactId>hashmap-repository</artifactId>
-			<version>${hashmap-repository.version}</version>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>${c3p0.version}</version>
 		</dependency>
-		<!-- Test -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

@@ -90,9 +90,9 @@
       <attribute value="jar:file:/C:/Users/q7e/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.5.1/jackson-datatype-joda-2.5.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar" sourcepath="M2_REPO/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar">
@@ -386,9 +386,10 @@
       <attribute value="jar:file:/C:/Users/q7e/.m2/repository/org/eclipse/jetty/toolchain/setuid/jetty-setuid-java/1.0.2/jetty-setuid-java-1.0.2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/no/storebrand/repository/repository-api/1.1.1/repository-api-1.1.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/no/storebrand/repository/hashmap-repository/1.2/hashmap-repository-1.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/mchange/c3p0/0.9.5.1/c3p0-0.9.5.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/mchange/mchange-commons-java/0.2.10/mchange-commons-java-0.2.10.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.4.187/h2-1.4.187.jar"/>
   <classpathentry kind="var" path="M2_REPO/junit/junit/4.12/junit-4.12.jar" sourcepath="M2_REPO/junit/junit/4.12/junit-4.12-sources.jar">
     <attributes>
       <attribute value="jar:file:/C:/Users/q7e/.m2/repository/junit/junit/4.12/junit-4.12-javadoc.jar!/" name="javadoc_location"/>

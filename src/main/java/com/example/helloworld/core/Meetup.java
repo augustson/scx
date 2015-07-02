@@ -71,7 +71,7 @@ public class Meetup {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((dateTime == null) ? 0 : dateTime.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((location == null) ? 0 : location.hashCode());
 		result = prime * result + ((subject == null) ? 0 : subject.hashCode());
 		return result;
@@ -86,10 +86,10 @@ public class Meetup {
 		if (getClass() != obj.getClass())
 			return false;
 		Meetup other = (Meetup) obj;
-		if (dateTime == null) {
-			if (other.dateTime != null)
+		if (id == null) {
+			if (other.id != null)
 				return false;
-		} else if (!dateTime.equals(other.dateTime))
+		} else if (!id.equals(other.id))
 			return false;
 		if (location == null) {
 			if (other.location != null)

@@ -40,27 +40,26 @@ public class MeetupResourceTest {
 
 	@Test
 	public void should_get_meetup() {
-		Meetup meetupInRepository = new Meetup().setDateTime(new DateTime()).setId(1L).setSubject("Kaffemøte")
-				.setLocation("Kantina");
+		Meetup meetupInRepository = new Meetup().setDateTime(new DateTime()).setId(1L);
 		repository.save(meetupInRepository);
 
 		Meetup meetup = resources.client().target("/meetups/1").request().get(Meetup.class);
 
-		assertThat(meetup.getId()).isEqualTo(meetupInRepository.getId());
+		assertThat(meetup).isEqualTo(meetupInRepository);
 	}
 
 	@Test
 	public void should_return_null_if_no_meetup_is_found() throws Exception {
 		Meetup meetup = resources.client().target("/meetups/1").request().get(Meetup.class);
-
 		assertThat(meetup).isNull();
 	}
 
 	@SuppressWarnings("unchecked")
 	@Test
 	public void should_get_list_of_meetups() throws Exception {
+		Meetup meetupInRepository2 = new Meetup().setDateTime(new DateTime());
 		repository.save(new Meetup().setDateTime(new DateTime()));
-		repository.save(new Meetup().setDateTime(new DateTime()));
+		repository.save(meetupInRepository2);
 
 		List<Meetup> meetups = resources.client().target("/meetups").request().get(List.class);
 
